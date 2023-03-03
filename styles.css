@@ -10,7 +10,7 @@ body {
   background: rgba(255, 0, 89, 1);
   background: linear-gradient(90deg, rgb(53, 0, 245) 0%, rgb(42, 164, 18) 57%, rgba(245,255,0,1) 100%);
   background-size: 600% 600%;
-  /* animation: body-bg 15s ease infinite; */
+  animation: body-bg 15s ease infinite;
 }
 
 @keyframes body-bg {
