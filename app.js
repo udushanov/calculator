@@ -5,6 +5,12 @@ const deleteButton = document.querySelector('[data-delete]');
 const allClearButton = document.querySelector('[data-all-clear]');
 const previousOperandTextElement = document.querySelector('[data-previous-operand]');
 const currentOperandTextElement = document.querySelector('[data-current-operand]');
+const toggleBtn = document.querySelector('#toggle');
+
+toggleBtn.addEventListener('change', () => {
+  const body = document.body;
+  body.classList.toggle('toggle-bg');
+});
 
 class Calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
@@ -127,3 +133,4 @@ deleteButton.addEventListener('click', () => {
   calculator.delete();
   calculator.updateDisplay();
 });
+
